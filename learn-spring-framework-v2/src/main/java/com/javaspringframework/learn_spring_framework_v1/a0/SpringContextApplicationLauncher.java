@@ -16,6 +16,7 @@ public class SpringContextApplicationLauncher {
 		try(var context = new AnnotationConfigApplicationContext(SpringContextApplicationLauncher.class))
 		{
 			Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+			System.out.println("Hellow there!!");
 		}
 		
 	}
